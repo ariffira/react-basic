@@ -1,0 +1,13 @@
+.myh1 {
+    text-align: center;
+    background-color: brown;
+    color: whitesmoke;
+    font-size: 32px;
+}
+.my_btn {
+    text-align: center;
+    background-color: palevioletred;
+    color: whitesmoke;
+    font-size: 32px;
+    border: 1px solid;
+}
