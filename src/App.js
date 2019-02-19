@@ -7,6 +7,8 @@ import Btn_bootstrap from './components/bootstrapComp';
 import SassTest from './components/sassCom';
 import StyleComp from './components/styleComp';
 import Counter from './components/counter';
+import RouterOne from './components/routerOne';
+import RouterTwo from './components/routerTwo';
 import Footer from './components/footer';
 
 class App extends Component {
@@ -21,6 +23,8 @@ class App extends Component {
           <SassTest></SassTest>
           <StyleComp></StyleComp>
         </header>
+        <RouterOne></RouterOne>
+        <RouterTwo></RouterTwo>
         <Footer></Footer>
       </div>
     );
