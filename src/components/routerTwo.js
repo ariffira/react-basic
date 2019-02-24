@@ -4,9 +4,9 @@ import { Link, Route } from 'react-router-dom';
 const RouterTwo = ()=> {
    return (
      <div>
-        <Link exact to="/menu1">Menu 1</Link>
+        <Link to="/menu1">Menu 1</Link>
         <Link to="/menu2">Menu 2</Link>
-        <Route exact path="/menu1" component={Menu1} />
+        <Route path="/menu1" component={Menu1} />
         <Route path="/menu2" component={Menu2} />
         <Route component={NoMatch}/>
      </div>

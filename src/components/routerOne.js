@@ -5,11 +5,11 @@ import Logout from './logout';
 const RouterMain = ()=> {
    return (
      <div>
-        <NavLink exact to="/home">Home Page</NavLink>
+        <NavLink to="/home">Home Page</NavLink>
         <NavLink to="/profile">My Profile Page</NavLink>
         <NavLink to="/logout">Logout</NavLink>
         <Switch>
-            <Route exact path="/home" component={Home} />
+            <Route path="/home" component={Home} />
             <Route path="/profile" component={Profile} />
             <Route path="/logout" component={Logout}/>
         </Switch>

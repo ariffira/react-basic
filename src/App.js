@@ -3,29 +3,41 @@ import './App.css';
 import './css/main.css';
 import Header from './components/header';
 import Basic from './components/basic';
-import Btn_bootstrap from './components/bootstrapComp';
+import Bootstrap from './components/bootstrapComp';
 import SassTest from './components/sassCom';
 import StyleComp from './components/styleComp';
 import Counter from './components/counter';
 import RouterOne from './components/routerOne';
 import RouterTwo from './components/routerTwo';
+import StateTest from './components/stateTest';
+import Parent from './components/parent';
+import LifeCycle from './components/lifeCycle';
 import Footer from './components/footer';
 
 class App extends Component {
+  state = {
+    author: 'Md Ariful Islam',
+    email: 'arifulislam.ude@gmail.com',
+    website: 'mailab.com',
+    date: new Date()
+  }
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <Header></Header>
-          <Basic></Basic>
-          <Btn_bootstrap></Btn_bootstrap>
-          <Counter></Counter>
-          <SassTest></SassTest>
-          <StyleComp></StyleComp>
+          <Header/>
+          <Basic/>
+          <Bootstrap/>
+          <Counter/>
+          <SassTest/>
+          <StyleComp/>
         </header>
-        <RouterOne></RouterOne>
-        <RouterTwo></RouterTwo>
-        <Footer></Footer>
+        <RouterOne/>
+        <RouterTwo/>
+        <StateTest dataFromState={this.state}/>
+        <Parent/>
+        <LifeCycle/>
+        <Footer/>
       </div>
     );
   }

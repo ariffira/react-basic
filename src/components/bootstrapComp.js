@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const Btn_bootstrap = ()=> {
+const Bootstrap = ()=> {
     return (
         <button className="btn btn-danger">
            Boostrap Button 
@@ -9,4 +9,4 @@ const Btn_bootstrap = ()=> {
     );
 }
 
-export default Btn_bootstrap;
+export default Bootstrap;
