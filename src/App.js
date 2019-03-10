@@ -13,6 +13,7 @@ import StateTest from './components/stateTest';
 import Parent from './components/parent';
 import LifeCycle from './components/lifeCycle';
 import Footer from './components/footer';
+import ReactRefs from './components/reactRefs';
 
 class App extends Component {
   state = {
@@ -37,6 +38,7 @@ class App extends Component {
         <StateTest dataFromState={this.state}/>
         <Parent/>
         <LifeCycle/>
+        <ReactRefs/>
         <Footer/>
       </div>
     );
