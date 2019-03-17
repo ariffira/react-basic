@@ -14,6 +14,8 @@ import Parent from './components/parent';
 import LifeCycle from './components/lifeCycle';
 import Footer from './components/footer';
 import ReactRefs from './components/reactRefs';
+import Todo from './components/Todo';
+import ChatClient from './components/ChatClient';
 
 class App extends Component {
   state = {
@@ -39,6 +41,8 @@ class App extends Component {
         <Parent/>
         <LifeCycle/>
         <ReactRefs/>
+        <Todo/>
+        <ChatClient/>
         <Footer/>
       </div>
     );
