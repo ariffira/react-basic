@@ -5,7 +5,7 @@ class Todo extends Component {
         super(props);
         this.state = { 
             newItem: '',
-            list: []
+            list: (localStorage.getItem('list')) ? JSON.parse(localStorage.getItem('list')): []
          }
     }
     // add item to list
@@ -13,10 +13,15 @@ class Todo extends Component {
        e.preventDefault();
        // console.log(e.target.newItem.value)
        let data = e.target.newItem.value;
-       let newItem = {value: data.slice()};
+       let newItem = {
+           id: Math.random(),
+           value: data.slice()
+        };
        console.log(newItem);
        let list = [...this.state.list];
        list.push(newItem);
+       localStorage.setItem('list', JSON.stringify(list));
+       console.log(JSON.parse(localStorage.getItem('list')));
        console.log(list);
        this.setState({
            list: list
