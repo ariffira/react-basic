@@ -16,6 +16,7 @@ import Footer from './components/footer';
 import ReactRefs from './components/reactRefs';
 import Todo from './components/Todo';
 import ChatClient from './components/ChatClient';
+import ReduxTestComp01 from './components/reduxTestComp01';
 
 class App extends Component {
   state = {
@@ -43,6 +44,9 @@ class App extends Component {
         <ReactRefs/>
         <Todo/>
         <ChatClient/>
+        <hr/>
+        <ReduxTestComp01/>
+        <hr/>
         <Footer/>
       </div>
     );
